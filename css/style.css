@@ -1,0 +1,1161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    
+}
+
+
+
+
+/*-------global----------*/
+a {
+    text-decoration: none;
+}
+
+li {
+    display: inline-block;
+}
+
+
+
+/*-------global----------*/
+
+.bar {
+    background: #000;
+    position: relative;
+    z-index: 2;
+}
+
+header {
+    background: url("../images/backgrounds/01.png");
+    height:82vh;
+    position: relative;
+    background-size: cover;
+
+}
+
+header .layout {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: #252c379c;
+    z-index: 1;
+}
+
+.container {
+    width:1140px;
+    margin: 0 auto;
+    
+}
+
+nav {
+    display: flex;  
+    padding: 20px 0;
+    justify-content: space-between;
+}
+
+nav .logo {
+   
+    flex-basis: 30%;
+  
+}
+
+nav .links {
+    flex-basis: 60%;
+}
+
+nav .links ul {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 19px;
+}
+nav .links ul li {
+    padding: 0 15px;
+}
+nav .links li:first-of-type a {
+    color: #97A9BD;
+}
+nav .links ul li a  {
+    color:#FFF;
+    transition: color 0.3s ease-in-out;
+}
+nav .links ul li a:hover {
+    color: #97A9BD
+}
+.logo p {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #FFF;
+    letter-spacing: 1px;
+}
+.logo p::first-letter {
+    font-size: 35px;
+    color:  #97A9BD;
+    font-weight: bold;
+}
+
+.logo p span {
+    font-size: 35px;
+    color:  #97A9BD;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.layout .content {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 10px;
+    color: #FFF;
+   
+}
+
+.layout .content h1 {
+    font-size: 53px;
+    font-weight:bold;
+    letter-spacing: 2px;
+}
+
+.layout .content p {
+    width: 61%;
+    margin: 40px auto;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.butt {
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.butt button {
+    padding: 12px 12px;
+    color: #FFF;
+    text-transform: uppercase;
+    background: #97A9BD;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.butt button:hover {
+    background: transparent;
+    border: 1px solid #FFF;
+}
+
+
+ .testimon{ 
+    position: absolute;   /* position absolute + width: 100% هياخد ويدث الاب الريلاتيف // position absolute width:inherit هياخد ويدث اقرب اب ليه */
+    top: 102%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: inherit;
+    height: 302px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2 ;
+}
+
+
+
+.testimon > div {
+    flex-basis: 22%;
+    height: 70%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    color: #FFF;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 3px #000 ;   
+}
+
+/* Child Div Background */
+.testimon .test1 {background-color: #97A9BD;}
+.testimon .test2 {background-color: #A197BD;}
+.testimon .test3 {background: #BDA697;}
+.testimon .test4 {background:#97BDAB;}
+/* Child Div Background */
+
+/* hover to change background color and box-shadow*/
+.testimon > div:hover{background-color: #FFF;color: rgb(8, 7, 7); box-shadow: 0 0 30px #97A9BD;}
+.testimon .test2:hover {box-shadow: 0 0 30px #A197BD;}
+.testimon .test3:hover {box-shadow: 0 0 30px #BDA697;}
+.testimon .test4:hover {box-shadow: 0 0 30px #97BDAB;}
+/* hover to change background color and box-shadow*/
+
+.testimon div a .fas {
+    border-radius: 33px;
+    background-color:#FFF;
+    font-size: 22px;
+    width: 58px;
+    height: 58px;
+    text-align: center;
+    padding: 19px 0px; 
+    transition: all 0.5s ease-in-out; }
+
+/* icons color inside child of testimon */    
+.testimon .test1 a .fas{color: #97A9BD;}
+.testimon .test2 a .fas  {color: #A197BD;}
+.testimon .test3 a .fas {color: #BDA697;}
+.testimon .test4 a .fas {color: #97BDAB;}
+/* icons color inside child of testimon */
+
+/* hover of div vhild to chanfe color and background of icons */
+.testimon .test1:hover a .fas{color: #FFF;background-color: #97A9BD;}
+.testimon .test2:hover a .fas{color: #FFF;background-color: #A197BD;}
+.testimon .test3:hover a .fas{color: #FFF;background-color: #BDA697;}
+.testimon .test4:hover a .fas{color: #FFF;background-color: #97BDAB;}
+/* hover of div vhild to chanfe color and background of icons */
+
+.testimon div h6{font-size: 19px;font-weight: 600;margin-top: 12px;}
+
+.testimon div p {text-align: center;font-size: 15px;width: 83%;line-height: 1.4;}
+
+/*-----------------------End Header-------------------*/
+
+/* ------------- Start section ----------------- */
+
+header + section {
+    padding: 120px;
+    margin-top: 163px;
+}
+
+section .container .sec-content {
+    display: flex;
+    justify-content:space-between;
+}
+
+section .container .sec-content > div{
+    background-color: #FFF;
+    color: #FFF;
+    flex-basis: 46%;
+    border: 1px solid rgba(42, 42, 42, 0.294);
+}
+
+section .container .sec-content > div img {display: block;}
+
+
+/* parent of icons and ancohors */ 
+section .container .sec-content .l-i {
+    padding: 10px 5px 10px 0;
+    transition: all 0.3s ease-in-out;
+}
+section .container .sec-content > div:hover .l-i  {
+    background-color: #97A9BD; 
+}
+/* parent of icons and ancohors */ 
+
+/* links styling code */
+section .container .sec-content .l-i a {
+    padding: 12px;
+    color:#000;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+section .container .sec-content > div:hover .l-i a {color:#FFF;}
+/* links styling code */
+
+/* icons styling code*/
+section .container .sec-content .l-i i{
+    background-color: #97A9BD;
+    padding: 5px; 
+    border-radius: 20px; 
+    margin-left: 320px;}
+section .container .sec-content > div:hover .l-i i {background-color: #FFF;color: #97A9BD;}
+/* icons styling code*/
+
+/* ------------- End section ----------------- */
+
+
+/* ------------- start tempus ----------------- */
+
+.temp-back{
+    padding: 70px 0;
+    background: url('../images/gallery/background-02.jpg') no-repeat ;
+    position: relative;
+    background-size:cover
+}
+
+.temp-back .layout{
+    position:absolute;
+    height: 100%;
+    background-color:#97a9bd8c;
+    z-index: 1;
+}
+
+.temp-back .temp-header {
+    text-align:center;
+    color:#FFF;
+    position: relative;
+    z-index: 2;
+}
+
+.temp-back .temp-header p {
+    font-size: 16px;
+}
+
+.temp-back .temp-header h3 {
+    font-size: 33px;
+    font-weight: 800;
+}
+
+.temp-back .temp-cont {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    margin-top: 80px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    height: 574px;
+}
+
+
+.temp-back .temp-cont > div {
+    flex-basis: 30.2%;
+    background: #FFF;
+    padding: 30px 15px ;
+    text-align: center;
+    color: rgb(29, 29, 29);
+    box-shadow: 0 0 20px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 40px;
+}
+
+.temp-back .temp-cont > div:hover {
+    background-color: #97A9BD;
+    color: #FFF;
+    transform: translatey(-5px);
+}
+
+.temp-back .temp-cont > div i 
+{
+    background: #97A9BD;
+    font-size: 28px;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 30px;
+    color: #FFF;
+    margin: 0 0 30px 0;
+    transition: all 0.3s ease-in-out , transform 0.6s ease-in-out;
+}
+.temp-back .temp-cont > div:hover i {
+    background-color: #FFF;
+    color:#97A9BD;
+    transform: rotate(180deg);
+}
+.temp-back .temp-cont > div h3 {
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.temp-back .temp-cont > div p {
+    width: 90%;
+    margin: auto;
+}
+
+/* ------------- end tempus ----------------- */
+
+.circle-parent {
+    padding: 80px 0;
+}
+
+.circle-parent .circle-header {
+    text-align: center;
+    color:#474747
+}
+
+.circle-parent .circle-header p {
+    font-size: 16px;
+}
+
+.circle-parent .circle-header h3 {
+    font-size: 33px;
+    font-weight: 500;
+}
+
+.circle-content {
+    display: flex;
+    align-items: center;
+    margin-top: 80px
+}
+
+.circle-content > div {
+    flex-basis: 25%;
+   text-align: center;
+
+}
+
+ .circle {
+    width: 150px;
+    height: 150px;
+    line-height: 130px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: lighter;
+    margin: auto;
+    border-top: 8px solid#6892c2 ;
+    border-right: 8px solid #6892c2 ;
+    border-left: 8px solid #97A9BD66 ;
+    border-bottom: 8px solid #97A9BD66  ;
+    border-radius: 75px;
+    animation: animate 2s 2 ease-in-out forwards;
+}
+
+@keyframes animate {
+    0% {
+        border-top: 10px solid #97A9BD66
+    }
+
+    25% {
+        border-top: 10px solid #6892c2 
+    }
+
+    50% {
+        border-top: 10px solid #97A9BD66
+    }
+
+    75% {
+        border-top: 10px solid #6892c2 
+    }
+
+    100% {
+        border-top: 10px solid #97A9BD66
+    }
+
+}
+
+.circle-p2 .circle60 {
+    border-top: 10px solid #6892c2;
+    animation: animate2 2s 2 ease-in-out forwards;
+
+}
+
+@keyframes animate2 {
+    0% {
+        border-top: 10px solid#97A9BD66
+    }
+
+    25% {
+        border-top: 10px solid #6892c2
+    }
+
+    50% {
+        border-top: 10px solid #97A9BD66
+    }
+
+    75% {
+        border-top: 10px solid #6892c2
+    }
+
+    100% {
+        border-top: 10px solid #6892c2
+    }
+
+}
+
+.circle-p3 .circle75 {
+    border-top: 10px solid #6892c2 ;
+    border-bottom: 10px solid #6892c2 ;
+    animation: animate3 2s 2 ease-in-out forwards ;
+}
+
+@keyframes animate3 {
+    0% {
+        border-left: 10px solid #97A9BD
+    }
+
+    25% {
+        border-left: 10px solid #6892c2
+    }
+
+    50% {
+        border-left: 10px solid #97A9BD66
+    }
+
+    75% {
+        border-left: 10px solid #6892c2
+    }
+
+    100% {
+        border-left: 10px solid #97A9BD66
+    }
+
+}
+
+.circle-p4 .circle100 {
+    border: 10px solid #6892c2;
+    animation: animate4 2s 2 ease-in-out forwards ;
+}
+
+@keyframes animate4 {
+    0% {
+        border: 10px solid #97A9BD66
+    }
+
+    25% {
+        border: 10px solid #6892c2
+    }
+
+    50% {
+        border: 10px solid #97A9BD66
+    }
+
+    75% {
+        border: 10px solid #6892c2
+    }
+
+    100% {
+        border: 10px solid #6892c2
+    }
+
+}
+
+.circle-content span {
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    padding: 25px 0;
+    display: inline-block;
+}
+
+/* ------------------ */ 
+
+/* Start sapien */ 
+
+.sapien{
+
+    position: relative;
+    height: 767px;
+    padding: 0px 0 80px 0;
+
+}
+
+.sapien > .layout {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: #F4F4F4;
+    z-index: 1;
+}
+
+.global-header {
+    position: relative;
+    color:#474747;
+    text-align: center;
+    z-index: 2;
+    padding: 80px 0;
+}
+
+.global-header p {
+    font-size: 16px;
+}
+
+.global-header h3 {
+    font-size: 33px;
+    font-weight: 500;
+}
+
+.s-parent {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 380px;
+}
+
+.s-parent > div {
+    flex-basis: 30%;
+    height: 100% ;
+    background: url('../images/backgrounds/nell.jpg') no-repeat;
+    background-size: cover;
+}
+
+.s-parent > div:nth-child(2){
+    background: url('../images/backgrounds/b.jpg');
+}
+
+.s-parent > div:nth-child(3){
+    background: url('../images/backgrounds/c.jpg');
+}
+
+
+.s-parent > div .layout {
+    text-align: center;
+    line-height: 380px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #FFF;
+    height: 100%;
+    background-color: #97a9bd5b;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.s-parent > div:hover .layout{
+    opacity: 1;
+}
+
+.s-parent .span {
+    padding: 15px 0;
+    border: 1px solid rgba(42, 42, 42, 0.294);
+    background-color: #FFF;
+    text-align: center;
+    width: 100%;
+    line-height: 1.5;
+}
+
+.s-parent .span h3 {
+    font-size: 22px;
+}
+
+
+.s-parent .span span {
+    font-size: 15px;
+}
+
+/* --------------------------------*/
+
+/* start opinion */
+
+.opinions {
+   background-color:  #97A9BD;
+   padding-bottom: 80px;
+}
+
+.opinions .global-header{
+    color: #FFF;
+}
+
+.op-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.op-flex div .client {
+   display: flex;
+   justify-content: center;
+   color: #FFF; 
+}
+
+.op-flex div .client .client-img img {
+    border-radius:50% ;
+    
+}
+
+.op-flex div .client .client-name {
+    padding: 25px 0px 25px 8px ;
+}
+
+.op-flex div .client .client-name h4 {
+    font-size: 23px;
+}
+
+.op-flex div .client .client-name span {
+    font-size: 13px;
+}
+
+.desc  {
+    margin-top: 17px;
+    position: relative;
+    padding: 15px;
+    background-color: #FFF;
+    line-height: 1.5;
+    font-size: 15px;
+    width: 95%;
+    border-radius: 33px 0 33px 0;
+}
+
+.desc i {
+    position: absolute;
+    color: rgba(221, 221, 221, 0.849);
+    left: 12px;
+    font-size: 30px;
+    z-index: 1;
+}
+
+.desc p {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+   
+}
+
+/* ---------------------------------*/
+
+.admin-flex {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+
+.admin-flex .flex-child {
+    flex-basis: 31%;
+}
+
+.admin-flex .flex-back {
+    background: url("../images/backgrounds/back1.jpg") no-repeat ;
+    background-position: 44%;
+    background-size:cover;
+    height: 347px;
+}
+
+.admin-flex .flex-child:nth-of-type(2) .flex-back{
+    background: url('../images/backgrounds/back2.jpg') no-repeat;
+    background-size:cover;
+}
+
+.admin-flex .flex-child:nth-of-type(3) .flex-back{
+    background: url('../images/backgrounds/back3.jpg') no-repeat;
+    background-size:cover;
+}
+
+.admin-flex .flex-back .layout {
+    height: 100%;
+    background: #97a9bd5b;
+    line-height: 347px;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.admin-flex .flex-back:hover .layout{
+    opacity: 1;
+}
+
+.admin-flex .flex-back .layout i {
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.admin-flex .flex-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    background: #282E39;
+    font-size: 13px;
+}
+
+.admin-flex .flex-label a {
+    color: #FFF;
+    letter-spacing: 1px;
+}
+
+.admin-flex .flex-label a i {
+    padding-right: 3px;
+}
+
+.admin-flex .date {
+    border-left: 1px solid #47474770;
+    width: 90%;
+    margin: 20px 0 0 20px; 
+    padding: 15px;
+}
+
+.admin-flex .date a {
+    display: block;
+    margin-top: 10px;
+    color: #82b0e4;
+}
+
+.admin-flex .date span {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/*----------------------------*/
+
+/* Start info */
+
+.info {
+    background: #F4F4F4;
+    padding-bottom: 80px;
+    color: #474747;
+}
+
+.info-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-flex .info-ch {
+    flex-basis: 48%;
+}
+
+.info-flex .info-ch .massage {
+    background-color: #FFF;
+    display: flex;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.info-flex .info-ch .massage .m-icon {
+    margin-right: 20px;
+    
+}
+
+.info-flex .info-ch .mg {
+    margin: 30px 0;
+}
+
+.info-flex .info-ch .massage .m-icon i {
+    border-radius: 50% ;
+    background-color: #A197BD;
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #FFF;
+    transition: all 0.5s ease-in-out;
+}
+
+.info-flex .info-ch .massage:first-child:hover{
+    background-color: #A197BD;
+    color: #FFF;
+}
+
+.info-flex .info-ch .massage:first-child:hover .m-icon i{
+    background-color: #FFF;
+    color: #A197BD;
+}
+
+
+
+.info-flex .info-ch .massage:nth-child(2) .m-icon i{
+    background-color: #BDA697;
+}
+
+.info-flex .info-ch .massage:nth-child(2):hover {
+    background-color: #BDA697;
+}
+
+.info-flex .info-ch .massage:nth-child(2):hover .m-icon i {
+    background-color: #FFF;
+    color: #BDA697;
+}
+
+
+.info-flex .info-ch .massage:nth-child(3) .m-icon i{
+    background-color: #97BDAB;
+}
+
+.info-flex .info-ch .massage:nth-child(3):hover{
+    background-color: #97BDAB;
+}
+
+.info-flex .info-ch .massage:nth-child(3):hover .m-icon i{
+    background-color: #FFF;
+    color:#97BDAB;
+}
+.info-flex .info-ch .massage .m-inf h3 {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.info-flex .info-ch .massage .m-inf span {
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.info-ch .mg2 {
+    margin: 15px 0;
+}
+
+.info-ch > h3 {
+    font-size: 22px;
+    font-weight: 500 ;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.info-ch >  p {
+    font-size: 15px;
+    font-weight: 500 ;
+    letter-spacing: 1px;
+}
+
+.info-ch form input {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border:none
+}
+
+.info-ch form button {
+    border:none;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    color: #FFF;
+    background-color: #97A9BD;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid #97A9BD;
+}
+
+.info-ch form button:hover{
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #474747;
+}
+/*--------------------------------------------*/
+
+/* start footer */
+
+footer {
+    background: url('../images/backgrounds/footer.jpg')no-repeat;
+    background-size:cover ;
+    color:#FFF;
+    position: relative;
+    padding: 80px 0;
+}
+
+footer > .layout {
+    width: 100%;
+    height: 100%;
+    background-color:#252c379c;
+    position: absolute;
+    top:0
+}
+
+footer .foot-child {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+footer .foot-child .foot-grandch{
+    flex-basis: 23%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+}
+
+footer .foot-child .foot-grandch:first-child {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 285px;
+}
+
+footer .foot-child .foot-grandch:first-child .header h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #FFF;
+    letter-spacing: 1px;
+
+}
+
+footer .foot-child .foot-grandch:first-child .header h2 span {
+    font-size: 35px;
+    color:  #97A9BD;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.foot-child .foot-grandch:first-child .header h2::first-letter {
+    font-size: 35px;
+    color:  #97A9BD;
+    font-weight: bold;
+    
+}
+
+.foot-child .foot-grandch:first-child .pargraph p {
+    margin: 35px 0;
+    color: #a5a5a5;
+    line-height: 1.5
+}
+
+
+
+.foot-child .foot-grandch:first-child .icons a i {
+    font-size: 16px;
+    background-color:  #282E39;
+    color: #a5a5a5;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 5px;
+}
+
+.foot-child .foot-grandch:first-child .icons a:hover .f,.foot-child .foot-grandch:first-child .icons a:hover .v{
+    background-color:  rgb(69, 69, 250);
+    color: #FFF;
+}
+
+.foot-child .foot-grandch:first-child .icons a:hover .g{
+    background-color:  rgb(255, 45, 8);
+    color: #FFF;
+}
+
+.foot-child .foot-grandch:first-child .icons a:hover .n, .foot-child .foot-grandch:first-child .icons a:hover i.t{
+    background-color:  rgb(8, 164, 255);
+    color: #FFF;
+}
+
+.foot-child .foot-grandch:nth-child(2){
+    
+    flex-direction: column;
+
+}
+
+.foot-child .foot-grandch .header2 {
+    margin-bottom: 40px;
+    font-size: 13px;
+    font-weight: 500;
+
+}
+
+.foot-child .foot-grandch:nth-child(2) .links a {
+    display: block;
+    padding: 15px 0;
+    border-bottom: 1px solid #f4f4f463;
+    color: #97A9BD;
+}
+
+.foot-child .foot-grandch:nth-child(2) .links .border-none {
+    border: none;
+}
+
+.foot-child .foot-grandch:nth-child(3){
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.foot-child .foot-grandch:nth-child(3) .header2{
+    flex-basis: 100%;
+}
+
+.foot-child .foot-grandch:nth-child(3) .bac-foot {
+    flex-basis: 30%;
+    height: 23%;
+    background: url('../images/backgrounds/11.jpg');
+    position: relative;
+    background-size: cover ;
+}
+
+.foot-child .foot-grandch:nth-child(3) .bac-foot:nth-child(2) {
+ 
+    background: url('../images/backgrounds/12.jpg');
+    background-size: cover ;
+}
+
+.foot-child .foot-grandch:nth-child(3) .bac-foot:nth-child(3) {
+ 
+    background: url('../images/backgrounds/13.jpg');
+    background-size: cover ;
+}
+
+.foot-child .foot-grandch:nth-child(3) .bac-foot:nth-child(4) {
+ 
+    background: url('../images/backgrounds/14.jpg');
+    background-size: cover ;
+   
+}
+
+.foot-child .foot-grandch:nth-child(3) .bac-foot:nth-child(5) {
+    margin: 8px 0 ;
+    background: url('../images/backgrounds/15.jpg');
+    background-size: cover ;
+}
+
+.foot-child .foot-grandch:nth-child(3) .bac-foot:nth-child(6) {
+    margin: 8px 0 ;
+    background: url('../images/backgrounds/16.jpg');
+    background-size: cover ;
+}
+
+.foot-child .foot-grandch:nth-child(3) .bac-foot:nth-child(7) {
+    margin: 8px 0 ;
+    background: url('../images/backgrounds/17.jpg');
+    background-size: cover ;
+}
+
+.foot-child .foot-grandch:nth-child(3) .bac-foot:nth-child(8) {
+ 
+    background: url('../images/backgrounds/18.jpg');
+    background-size: cover ;
+}
+
+.foot-child .foot-grandch:nth-child(3) .bac-foot:nth-child(9) {
+ 
+    background: url('../images/backgrounds/19.jpg');
+    background-size: cover ;
+}
+
+.foot-child .foot-grandch:nth-child(3) .bac-foot .layout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 74.6px;
+    background-color: #97a9bd5b;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.foot-child .foot-grandch:nth-child(3) .bac-foot:hover .layout {
+    opacity: 1;
+}
+
+.foot-child .foot-grandch:nth-child(4) {
+    flex-direction: column;
+}
+
+.foot-child .foot-grandch:nth-child(4) .last a{
+    color: #97A9BD;
+}
+
+.foot-child .foot-grandch:nth-child(4) .last span {
+    display: block;
+    margin: 20PX 0;
+    color: #a5a5a5;;
+}
+
+.foot-child .foot-grandch:nth-child(4) .border-bot{
+    border-bottom: 1px solid #f4f4f463;
+    margin-bottom: 20px;
+}
+
+/* ---------------------------------------------*/
+
+.End {
+    padding: 30px 0;
+    display: flex;
+    background: #282E39;
+}
+
+.end-flex {
+    display: flex;
+    justify-content: space-between;
+    color: #a5a5a5;
+}
+
+.end-flex .copy span a {
+    color: #a5a5a5;
+}
+
+
